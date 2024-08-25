@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI";
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.line {
+    height: 8px;
+    background-color: rgb(35, 35, 35);
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#container1 {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.9) 100%), url(vitalFiles/1stBackgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#container1 header {
+    width: 76vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+#netflixLogo img {
+    margin-right: 20px;
+    width: 150px;
+}
+
+#languageAndSignInSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+#translateButton {
+    width: 102px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 6px;
+    background-color: rgba(30, 30, 30, 0.5);
+    position: relative;
+}
+
+#translateLogo {
+    z-index: 10;
+}
+
+#translateSelect {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 26px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(30, 30, 30, 0.5);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#translateSelect option {
+    background-color: white;
+    color: black;
+}
+
+#signInButton {
+    width: 78px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding-bottom: 2px;
+    background-color: rgb(250, 0, 0);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+#signInButton:hover {
+    background-color: rgba(200, 0, 0);
+}
+
+#container1 main {
+    width: 80vw;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container1MainHeading1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+#container1MainHeading2 {
+    text-align: center;
+    font-weight: 450;
+    font-size: 24px;
+}
+
+#emailHeading {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 450;
+    font-size: 20px;
+}
+
+#emailAndGetStartedSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px;
+}
+
+#emailBox {
+    width: 400px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding-left: 15px;
+    background-color: rgba(30, 30, 30, 0.5);
+    font-size: 1rem;
+}
+
+#getStartedButton {
+    width: 200px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(250, 0, 0);
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#getStartedButton:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+@media (width <=920px) {
+    #container1MainHeading1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 38px;
+    }
+}
+
+@media (width <=600px) {
+    #netflixLogo img {
+        width: 100px;
+    }
+    #languageAndSignInSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    #translateButton {
+        width: 30px;
+        height: 24px;
+    }
+    
+    #translateSelect option {
+        background-color: white;
+        color: black;
+    }
+    
+    #signInButton {
+        width: 48px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        padding-bottom: 2px;
+        background-color: rgb(250, 0, 0);
+        font-weight: 600;
+        font-size: 10px;
+        cursor: pointer;
+        transition: all 0.15s ease-in;
+    }
+    
+    #signInButton:hover {
+        background-color: rgba(200, 0, 0);
+    }
+    
+
+    #container1MainHeading1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 28px;
+    }
+
+    #container1MainHeading2 {
+        text-align: center;
+        font-weight: 450;
+        font-size: 16px;
+    }
+
+    #emailHeading {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 450;
+        font-size: 12px;
+    }
+
+    #emailAndGetStartedSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 20px;
+    }
+
+    #emailBox {
+        width: 60vw;
+        height: 38px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        padding-left: 15px;
+        background-color: rgba(30, 30, 30, 0.5);
+        font-size: 1rem;
+    }
+    
+    #getStartedButton {
+        width: 100px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0px;
+        border-radius: 5px;
+        background-color: rgb(250, 0, 0);
+        font-weight: 600;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+    #getStartedButton:hover {
+        background-color: rgb(200, 0, 0);
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.8rem;
+    }
+}

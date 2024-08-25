@@ -1,0 +1,285 @@
+.container {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.subContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textBox {
+    width: 30vw;
+}
+
+.textBoxHeading {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.textBoxPara {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.mediaBox {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mutedVideo {
+    width: 600px;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    z-index: -10;
+}
+
+.mutedVideoImage {
+    width: 100%;
+    z-index: -1;
+}
+
+#container3SubContainerMediaBoxSmallBox{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0);
+    position: absolute;
+    bottom: 8%;
+}
+
+#container3SubContainerMediaBoxSmallBoxMiniBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#secondMiniImage{
+    width: 16%;
+}
+
+#strangerThingsText{
+    font-size: 16px;
+}
+
+#downloadText{
+    font-size: 14px;
+    color: rgb(0, 89, 255);
+}
+
+#thirdVideo {
+    width: 60%;
+    top: 9%;
+    left: 18%;
+}
+
+@media (width <= 1920px) {
+    .container{
+        height: 480px;
+    }
+    .mutedVideo{
+        width: 420px;
+    }
+}
+
+@media (width <=1440px) {
+    .textBox {
+        width: 45vw;
+    }
+
+    .textBoxHeading {
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .textBoxPara {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .mediaBox {
+        width: 45vw;
+    }
+    
+    .mutedVideo {
+        width: 480px;
+        position: absolute;
+        top: 20%;
+        left: 13%;
+        z-index: -10;
+    }
+
+    .mutedVideoImage {
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+@media (width <=920px) {
+
+    .container {
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+    }
+
+    
+    .subContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #container3SubContainer{
+        flex-direction: column-reverse;
+    }
+
+    .textBox {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .textBoxHeading {
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .textBoxPara {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .mediaBox {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .mutedVideo {
+        width: 530px;
+        position: absolute;
+        z-index: -10;
+    }
+    
+    .mutedVideoImage {
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+@media (width <=600px) {
+
+    .container {
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+    }
+
+    .subContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .textBox {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .textBoxHeading {
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .textBoxPara {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .mediaBox {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .mutedVideo {
+        width: 340px;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .mutedVideoImage {
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+@media (width <=460px) {
+    .container {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+    }
+
+    .textBoxHeading {
+        font-weight: 800;
+        font-size: 24px;
+    }
+
+    .textBoxPara {
+        font-weight: 400;
+        font-size: 7px;
+    }
+
+    .mutedVideo {
+        width: 60vw;
+        position: absolute;
+        z-index: -10;
+    }
+
+    #strangerThingsText{
+        font-size: 8px;
+    }
+    
+    #downloadText{
+        font-size: 7px;
+    }
+}

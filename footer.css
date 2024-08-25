@@ -1,0 +1,63 @@
+footer{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+footer h4{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+
+#fContainer{
+    width: 60vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#fBox2{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fBox2SmallBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+h4 a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (width < 920px){
+    footer{
+        font-size: 14px;
+        height: 480px;
+    }
+    #fBox2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+
+    .fBox2SmallBox{
+        gap: 10px;
+    }
+}
+
+@media (width < 480px){
+    footer{
+        font-size: 12px;
+        height: 500px;
+    }
+
+}
